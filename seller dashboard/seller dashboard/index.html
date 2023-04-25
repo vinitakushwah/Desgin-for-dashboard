@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Seller Dashboard!</title>
+</head>
+
+<body>
+
+
+  <!-- Sidebar -->
+
+  
+
+
+    <div class="container-fluid back_color">
+        <div class="row  pb-3 m-1">
+            <div class="col-md bg_color m-1  color p-5"><span class="fw-bold fs-4 ">$12.34</span>
+                <span class="arrow_color m-1 fw-bold">+3.5%</span>
+                <span class="pull-right">
+                    <i class="bi bi-arrow-up-right  arrow_color  head_text p-2"></i></span>
+                <p class="text_color mt-1">Potential growth</p>
+            </div>
+            <div class="col-md bg_color m-1 mx-2  color p-5"><span class="fw-bold  fs-5">$17.34</span>
+                <span class="arrow_color m-1 fw-bold">+11%</span>
+                <span class="pull-right">
+                    <i class="bi bi-arrow-up-right  arrow_color  head_text    p-2"></i></span>
+                <p class="text_color mt-1">Revenue current</p>
+            </div>
+            <div class="col-md bg_color m-1  mx-2 color p-5"><span class="fw-bold fs-5">$12.34</span>
+                <span class="arrow_color_red m-1 fw-bold">-2.4%</span>
+                <span class="pull-right">
+                    <i class="bi bi-arrow-down-left   arrow_color_red  head_text   p-2"></i></span>
+                <p class="text_color mt-1">Daily income</p>
+            </div>
+            <div class="col-md bg_color m-1   color p-5"><span class="fw-bold fs-5">$31.53%</span>
+                <span class="arrow_color m-1 fw-bold">+3.5%</span>
+                <span class="pull-right">
+                    <i class="bi bi-arrow-up-right  arrow_color  head_text   p-2"></i></span>
+                <p class="text_color mt-1">Expense current</p>
+            </div>
+        </div>
+
+        <!-- second section -->
+
+        <div class="row m-1 ">
+            <div class="col bg_color color">
+                <div>
+                    <p class="fw-bold fs-4 m-4 ">Transaction History</p>
+                </div>
+                <center>
+                    <div class="piechart">
+                        <canvas id="myChart" ></canvas>
+                        </div>
+                </center>
+               
+                <div class=" mt-3 p-4" style="background-color:#11141d ;">
+                    <div>
+                        <p class="fw-bold">Transfer to Paypal</p>
+                        <span class="text_color">07 jan 2009, 09:12AM</span> <span
+                            class="pull-right fw-bold ">$236</span>
+                    </div>
+                </div>
+                <div class=" mt-3 p-4 mb-4 " style="background-color:#11141d ;">
+                    <div>
+                        <p class="fw-bold">Transfer to Stripe</p>
+                        <span class="text_color">07 jan 2009, 09:12AM</span> <span
+                            class="pull-right fw-bold ">$593</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second-right-section -->
+
+            <div class="col-sm-8 bg_color  right_bar color">
+                <div class="mt-3">
+                    <span class="fw-bold fs-4 mx-2 ">Open Projects</span>
+                    <span class=" text_color pull-right" style="font-weight:lighter;">Your Data Status</span>
+                    </span>
+                </div>
+               <br>
+
+<!--project description --- -->
+<div class="d-flex justify-content-between">
+    <div>
+      <div class="flex" style="display: flex; justify-content: space-between;">
+        <span>
+            <i class="fa fa-file-text-o color m-1 p-2  fs-1" style="background-color: #008fe6;"></i>
+        </span>
+        <div class=" mx-2 ">
+          <p class="fw-bold">Admin Dashboard Design</p>
+          <p class=" text_color">Broadcast web app mockup</p>
+        </div>
+      </div>
+    </div>
+   <div>
+    <p >15 minutes ago</p>
+    <p class="text_color">30 tasks, 5 issues</p>
+   </div>  
+</div>
+
+<hr class="color">
+
+
+<div class="d-flex justify-content-between">
+    <div>
+      <div class="flex" style="display: flex; justify-content: space-between;">
+        <span>
+          <i class="fa fa-cloud-download  m-1 p-2 fs-1" style=" background-color: #00d15a; " ></i>
+        </span>
+        <div class="mx-2 ">
+          <p class="fw-bold">WordPress Development</p>
+          <p class=" text_color">upload new desigen</p>
+        </div>
+      </div>
+    </div>
+   <div >
+    <p>1 hour ago</p>
+    <p class="text_color">23 tasks, 5 issues</p>
+   </div>  
+</div>
+<hr class="color">
+<div class="d-flex justify-content-between">
+    <div>
+      <div class="flex" style="display: flex; justify-content: space-between;">
+        <span>
+          <i class="fa fa-clock-o  m-1 p-2 fs-1" style=" background-color:  #8e5ee7; " ></i>
+        </span>
+        <div class="mx-2 ">
+          <p class="fw-bold">Project meeting</p>
+          <p class=" text_color">New project discussion</p>
+        </div>
+      </div>
+    </div>
+   <div >
+    <p>35 minutes ago</p>
+    <p class="text_color">15 tasks, 2 issues</p>
+   </div>  
+</div>
+<hr class="color">
+<div class="d-flex justify-content-between">
+    <div>
+      <div class="flex" style="display: flex; justify-content: space-between;">
+        <span>
+          <i class="fa fa-envelope-open  m-1 p-2 fs-1" style=" background-color:  #fb4149; " ></i>
+        </span>
+        <div class="mx-2 ">
+          <p class="fw-bold">Broadcast Mail</p>
+          <p class=" text_color">Sent release details to team</p>
+        </div>
+      </div>
+    </div>
+   <div>
+    <p>55 minutes ago</p>
+    <p class="text_color">35 tasks, 7 issues</p>
+   </div>  
+</div>
+<hr class="color">
+<div class="d-flex justify-content-between">
+    <div>
+      <div class="flex" style="display: flex; justify-content: space-between;">
+        <span>
+          <i class="fa fa-check-circle-o  m-1 p-2 fs-1" style=" background-color:  #feaa00; " ></i>
+        </span>
+        <div class="mx-2 ">
+          <p class="fw-bold">Ui Design</p>
+          <p class=" text_color">New Application planing</p>
+        </div>
+      </div>
+    </div>
+   <div >
+    <p>50 minutes ago</p>
+    <p class="text_color">27 tasks, 4 issues</p>
+   </div>  
+</div>           
+</div>
+     </div>
+
+
+        <!-- footer section -->
+
+        <div class="row m-1">
+            <div class="col-md bg_color mt-3 mx-1 color p-4">
+                <span class="fw-bold">Revenue</span>
+                <p><span class="fa-2x">$32123</span> <span class="arrow_color mx-1 fw-bold">+3.5%</span>
+                    <span class="pull-right"><i class="fa fa-cube fa-3x text-info" aria-hidden="true"></i></span>
+                </p>
+
+                <p class="text_color">11.38% Since last month</p>
+            </div>
+
+            <div class="col-md bg_color mt-3 mx-3 color p-4" id="Sales">
+                <span class="fw-bold">Sales</span>
+                <p><span class="fa-2x">$32123</span> <span class="arrow_color fw-bold  mx-1">+8.3%</span>
+                    <span class="pull-right"> <i class="fa fa-suitcase text-danger fa-3x"></i></span>
+                </p>
+                <p class="text_color">9.61% Since last month</p>
+            </div>
+            <div class="col-md bg_color mt-3 mx-1 color p-4">
+                <span class="fw-bold"> Purches</span>
+                <p><span class="fa-2x">$32123</span> <span class=" arrow_color_red mx-1  fw-bold">-2.1</span>
+                    <span class="pull-right"><i class="fa fa-desktop  fa-3x text-success"></i></span>
+                </p>
+                <p class="text_color ">2.27% Since last month</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="../seller dashboard/app.js"></script>
+</body>
+
+</html>
